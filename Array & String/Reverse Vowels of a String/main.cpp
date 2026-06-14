@@ -1,3 +1,5 @@
+// Approach: Two Pointers to Swap Vowels from Both Ends
+
 class Solution {
 public:
   bool isVowel(char c) {
@@ -26,3 +28,16 @@ public:
     return s;
   }
 };
+
+/*
+Time Complexity: O(n)
+- Use two pointers moving toward each other.
+- Each character is visited at most once by either pointer.
+- Vowel checking takes O(1) time.
+
+Space Complexity: O(1)
+- Reversal is performed in-place.
+- Only two pointers and a few temporary variables are used.
+
+Where n = s.length().
+*/
